@@ -5,17 +5,29 @@
   "main": "index.js",
   "scripts": {
     "new": "node ./scripts/newDay.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --config ./.mocharc.json",
+    "test:watch": "mocha --watch --config ./.mocharc.json",
+    "test:parallel": "mocha --parallel --config ./.mocharc.json",
+    "test:coverage": "nyc npm test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^14.14.10",
+    "chai": "^4.2.0",
     "get-caller-file": "^2.0.5",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
     "typescript": "^4.1.2"
   },
   "devDependencies": {
-    "shelljs": "^0.8.4"
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.4",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "prettier": "^2.2.1",
+    "shelljs": "^0.8.4",
+    "ts-node": "^9.0.0"
   }
 }
