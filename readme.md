@@ -3,7 +3,7 @@
 | Day                           | Part One   | Part Two   |
 | ----------------------------- | ---------- | ---------- |
 | [Day 1](./src/day1/index.ts)  |  0.127ms   |   1.707ms  |
-| Day 2                         |            |            |
+| [Day 2](./src/day2/index.ts)  |  1.223ms   |   0.737ms  |
 | Day 3                         |            |            |
 | Day 4                         |            |            |
 | Day 5                         |            |            |
