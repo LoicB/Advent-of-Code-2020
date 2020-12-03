@@ -7,5 +7,13 @@ export const inputToNumberList = (input: string): number[] => {
 }
 
 export const inputToStringList = (input: string): string[] => {
-    return input.split("\n");
+    return input.split(/\r?\n/);
+}
+
+
+export const inputTo2dStringList = (input: string): string[][] => {
+    const stringList: string[] = inputToStringList(input);
+    return stringList.map(line => {
+        return line.split('');
+    });
 }
