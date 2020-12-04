@@ -5,7 +5,7 @@
 | [Day 1](./src/day1/index.ts)  |  0.127ms   |   1.707ms  |
 | [Day 2](./src/day2/index.ts)  |  1.223ms   |   0.737ms  |
 | [Day 3](./src/day3/index.ts)  |  0.241ms   |   0.302ms  |
-| Day 4                         |            |            |
+| [Day 4](./src/day4/index.ts)  |  0.23ms    |   1.012ms  |
 | Day 5                         |            |            |
 | Day 6                         |            |            |
 | Day 7                         |            |            |
