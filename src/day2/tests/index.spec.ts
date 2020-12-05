@@ -30,7 +30,7 @@ describe('Input preparation', () => {
     });
 });
 
-describe('Day 1 - Part One', () => {
+describe('Day 2 - Part One', () => {
     it('should return 2', () => {
         const input = '1-3 a: abcde\n' +
             '1-3 b: cdefg\n' +
@@ -40,7 +40,7 @@ describe('Day 1 - Part One', () => {
     });
 });
 
-describe('Day 1 - Part Two', () => {
+describe('Day 2 - Part Two', () => {
     it('should return 1', () => {
         const input = '1-3 a: abcde\n' +
             '1-3 b: cdefg\n' +

@@ -1,7 +1,7 @@
 import {expect} from 'chai';
 import {isTree, partOne, partTwo, prepareInput} from '../index';
 
-describe('Day 1 - Part One', () => {
+describe('Day 3 - Part One', () => {
     it('should return 7', () => {
         const input = '..##.......\n' +
             '#...#...#..\n' +
@@ -19,7 +19,7 @@ describe('Day 1 - Part One', () => {
     });
 });
 
-describe('Day 1 - Part Two', () => {
+describe('Day 3 - Part Two', () => {
     it('should return 336', () => {
         const input = '..##.......\n' +
             '#...#...#..\n' +
