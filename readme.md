@@ -12,7 +12,7 @@
 | [Day 8](./src/day8/index.ts)  |  0.274ms   |   5.169ms  |
 | [Day 9](./src/day9/index.ts)  |  3.825s    |   3.844s   |
 | [Day 10](./src/day10/index.ts)|  0.301ms   |   0.283ms  |
-| Day 11                        |            |            |
+| [Day 11](./src/day11/index.ts)|  92.18ms   |   114.314ms|
 | Day 12                        |            |            |
 | Day 13                        |            |            |
 | Day 14                        |            |            |
