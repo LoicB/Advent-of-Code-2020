@@ -162,14 +162,14 @@ const rotateRight = (value: number, x: number, y: number): Coordinates => {
 
 
 const rotate = (value: number, x: number, y: number, rotateAction: (x: number, y: number) => Coordinates): Coordinates => {
-    let angleLeft = value;
+    let angle = value;
     let resX = x;
     let resY = y;
-    while (angleLeft > 0) {
+    while (angle > 0) {
         const {x:newX, y: newY} = rotateAction(resX, resY);
         resX = newX;
         resY = newY;
-        angleLeft -= 90;
+        angle -= 90;
     }
     return {x: resX, y: resY};
 }

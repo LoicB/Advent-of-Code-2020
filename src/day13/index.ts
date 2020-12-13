@@ -2,6 +2,14 @@ import {readInput} from '../utils/readInput';
 import {runPartOneAndTwo} from "../utils/adventOfCodeRunner";
 import {inputToStringList} from "../utils/cookInput";
 
+
+export interface BusSchedules {
+    timestamp: number,
+    busIDs: number[]
+}
+
+const rawInput = readInput()
+
 export const prepareInputPartOne = (rawInput: string) => {
     const lines: string[] = inputToStringList(rawInput);
     const IDs: number[] = lines[1].split(',').filter(id => id !== 'x').map(id => Number(id));
@@ -11,11 +19,20 @@ export const prepareInputPartOne = (rawInput: string) => {
     }
 }
 
-export interface BusSchedules {
-    timestamp: number,
-    busIDs: number[]
-}
 
+export const partOne = (rawInput: string): number | undefined => {
+    const input: BusSchedules = prepareInputPartOne(rawInput);
+    let earliestTimestamp = -1;
+    let busID = -1;
+    input.busIDs.forEach(id => {
+        const busNextDepartingTime = busNextDepartureTime(input.timestamp, id);
+        if (earliestTimestamp === -1 || earliestTimestamp >= busNextDepartingTime) {
+            earliestTimestamp = busNextDepartingTime;
+            busID = id;
+        }
+    })
+    return busID * (earliestTimestamp - input.timestamp);
+}
 
 export const busNextDepartureTime = (timestamp: number, id: number): number => {
     return timestamp + id - timestamp % id;
@@ -31,21 +48,6 @@ export const prepareInputPartTwo = (rawInput: string) => {
     }
 }
 
-const rawInput = readInput()
-
-export const partOne = (rawInput: string): number | undefined => {
-    const input: BusSchedules = prepareInputPartOne(rawInput);
-    let earliestTimestamp = -1;
-    let busID = -1;
-    input.busIDs.forEach(id => {
-        const busNextDepartingTime = busNextDepartureTime(input.timestamp, id);
-        if (earliestTimestamp === -1 || earliestTimestamp >= busNextDepartingTime) {
-            earliestTimestamp = busNextDepartingTime;
-            busID = id;
-        }
-    })
-    return busID * (earliestTimestamp - input.timestamp);
-}
 
 
 export const partTwo = (rawInput: string): number | undefined => {
