@@ -79,18 +79,6 @@ describe('Day 18 - Calculation', () => {
         const result = calculate(3, Operator.MULTIPLICATION, 3);
         expect(result).equal(9);
     });
-    it('should return 9', () => {
-        const result = calculate(3, Operator.SUBTRACTION, 3);
-        expect(result).equal(0);
-    });
-    it('should return 3', () => {
-        const result = calculate(9, Operator.DIVISION, 3);
-        expect(result).equal(3);
-    });
-    it('should return 3', () => {
-        const result = calculate(9, Operator.DIVISION, 0);
-        expect(result).equal(Infinity);
-    });
 });
 
 describe('Day 18 - Part Two', () => {
