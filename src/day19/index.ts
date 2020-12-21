@@ -58,13 +58,13 @@ const countMatchingMessages = (rules: string[], messages: string[]) => {
 const countMatchingMessagesRecursive = (rules: string[], messages: string[]) => {
     let index = 0;
     const regex: RegExp = createRegexRule(rules, 0);
-    const regexRecc1: RegExp = createRegexRuleSimple(rules, 42);
-    const regexRecc2: RegExp = createRegexRuleSimple(rules, 31);
+    const regexRule42: RegExp = createRegexRuleSimple(rules, 42);
+    const regexRule31: RegExp = createRegexRuleSimple(rules, 31);
     let count = 0;
     while (index < messages.length) {
         if (messages[index].match(regex)) {
-            const matches42: string[] = (messages[index].match(regexRecc1) || []).filter(value => value !== undefined);
-            const matches31: string[] = (messages[index].match(regexRecc2) || []).filter(value => value !== undefined);
+            const matches42: string[] = (messages[index].match(regexRule42) || []).filter(value => value !== undefined);
+            const matches31: string[] = (messages[index].match(regexRule31) || []).filter(value => value !== undefined);
             if (matches42.length === matches31.length) {
                 count++;
             }
