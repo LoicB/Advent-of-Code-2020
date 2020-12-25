@@ -24,8 +24,8 @@
 | Day 20                        |            |            |
 | [Day 21](./src/day21/index.ts)|  2.515ms   |   3.016ms  |
 | [Day 22](./src/day22/index.ts)|  0.358ms   |   145.286ms|
-| Day 23                        |            |            |
-| [Day 24](./src/day24/index.ts)|   6.875ms  | 17941.163ms|
+| [Day 23](./src/day23/index.ts)|  0.875ms   |  4372.008ms|
+| [Day 24](./src/day24/index.ts)|  6.875ms   | 17941.163ms|
 | [Day 25](./src/day25/index.ts)|  32.906ms  | ~25 days :)|
 
 
