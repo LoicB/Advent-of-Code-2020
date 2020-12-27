@@ -21,7 +21,7 @@
 | [Day 17](./src/day17/index.ts)|  21.197ms  |   189.883ms|
 | [Day 18](./src/day18/index.ts)|  18.172ms  |   15.088ms |
 | [Day 19](./src/day19/index.ts)|  34.215ms  |   164.887ms|
-| Day 20                        |            |            |
+| [Day 20](./src/day20/index.ts)|  51.428ms  |   103.468ms|
 | [Day 21](./src/day21/index.ts)|  2.515ms   |   3.016ms  |
 | [Day 22](./src/day22/index.ts)|  0.358ms   |   145.286ms|
 | [Day 23](./src/day23/index.ts)|  0.875ms   |  4372.008ms|
