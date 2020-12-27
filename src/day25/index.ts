@@ -7,7 +7,6 @@ export const prepareInput = (rawInput: string) => inputToNumberList(rawInput)
 const input = prepareInput(readInput())
 
 export const partOne = (input: number[]): number | undefined => {
-    console.log(input);
     return loop(input[1], findLoopSize(input[0]));
 }
 

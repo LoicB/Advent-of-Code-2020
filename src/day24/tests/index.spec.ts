@@ -172,9 +172,7 @@ describe('Day 24 - next Days', () => {
         expect(result).equal(10);
     });
     it('should return 15', () => {
-        // console.log(blackTiles);
         const result = countBlackTilesFromFloor(nextDay( blackTiles));
-        console.log(nextDay( blackTiles));
         expect(result).equal(15);
     });
     it('should return 12', () => {
